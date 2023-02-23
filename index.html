@@ -7,7 +7,24 @@
     <title>msn-1.8</title>
     <!-- some styles -->
     <link rel="stylesheet" href="./design/main.css" />
-    <script src="js.js"></script>
+    <!-- REMEMBER the defer Attribute -->
+    <script src="./app/burger.js" defer></script>
   </head>
-  <body class="body"></body>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__h1 header__h1-flexible">
+        <i>myFirstChatApp</i>
+      </h1>
+      <section class="header__box">
+        <article class="header__burger" id="burger-chat">
+          <div class="header__burger-lineUp"></div>
+          <div class="header__burger-lineSpecial"></div>
+          <div class="header__burger-lineDown"></div>
+        </article>
+      </section>
+    </header>
+    <!--     <main></main>
+    <aside></aside>
+    <footer></footer> -->
+  </body>
 </html>

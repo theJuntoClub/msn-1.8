@@ -6,3 +6,75 @@
   margin: 0;
   background: #001;
 }
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #002;
+}
+
+.header__h1 {
+  margin-left: 25px;
+  text-shadow: 2px 2px 3px #0aa;
+  color: #9cc;
+}
+
+@media screen and (max-width: 600px) {
+  .header__h1-flexible {
+    font-size: 1.7rem;
+    margin-top: 24px;
+  }
+}
+
+.header__burger {
+  position: relative;
+  top: 35px;
+  right: 35px;
+  width: 50px;
+  height: 20px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__burger:hover {
+  background: #0aa;
+  opacity: 0.8;
+  border-radius: 5px 5px;
+}
+
+.header__burger-lineUp {
+  height: 5px;
+  width: 25px;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #0ff;
+}
+
+.header__burger-lineSpecial {
+  height: 1px;
+  width: 50px;
+  background-color: #0ff;
+}
+
+.header__burger-lineDown {
+  height: 5px;
+  width: 25px;
+  border-radius: 0px 0px 5px 5px;
+  background-color: #0ff;
+}
+
+/* happy hacking 👽 */
+.show-x .header__burger-lineSpecial {
+  background: transparent;
+}
+
+.show-x .header__burger-lineUp {
+  transform: rotate(45deg) translate(6px, 4px);
+}
+
+.show-x .header__burger-lineDown {
+  transform: rotate(-45deg) translate(8px, -3px);
+}
