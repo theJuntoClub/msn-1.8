@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>msn-1.8</title>
     <!-- some styles -->
-    <link rel="stylesheet" href="./design/main.css" />
+    <link rel="stylesheet" href="./design/master.css" />
+    <link rel="stylesheet" href="./design/header/header.css" />
+    <link rel="stylesheet" href="./design/main/main.css" />
     <!-- REMEMBER the defer Attribute -->
     <script src="./app/burger.js" defer></script>
+    <script src="./app/chat.js" defer></script>
   </head>
   <body class="body">
     <header class="header">
@@ -23,7 +26,22 @@
         </article>
       </section>
     </header>
-    <!--     <main></main>
+    <main class="chat__bg" id="chat">
+      <div class="chat">
+        <ul class="chat__cloud" id="cloud"></ul>
+        <div class="chat__footer">
+          <input
+            type="text"
+            class="msg"
+            placeholder="Message"
+            type="text"
+            id="msg"
+          />
+          <button id="btn" class="btn">send</button>
+        </div>
+      </div>
+    </main>
+    <!--     
     <aside></aside>
     <footer></footer> -->
   </body>

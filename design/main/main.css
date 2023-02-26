@@ -1,0 +1,129 @@
+.chat__bg {
+  position: absolute;
+  /* controlando el eje 3D de nuestra app */
+  z-index: 2;
+  /* ************************ */
+  width: 50%;
+  height: 100vh;
+  padding: 5px;
+  border-top-right-radius: 13px;
+  /* effects */
+  transform: translateX(-2000px);
+  transition: 1.2s;
+  /* **************** */
+  background-image: url("/assets/background-chat/wallpaper.webp");
+  background-size: cover;
+  background-color: #9cc;
+}
+
+.show-chat {
+  transform: translateX(0);
+}
+
+@media screen and (max-width: 960px) {
+  .chat__bg {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat__bg {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .chat__bg {
+    width: 45%;
+  }
+}
+
+.chat {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  position: absolute;
+  height: 80vh;
+  width: 60vw;
+  overflow-y: scroll;
+  border: #0ee 11px groove;
+  background-image: linear-gradient(to top, #000, #333, #445, #666, #999);
+}
+
+/* scroll effects */
+.chat::-webkit-scrollbar {
+  width: 10px;
+}
+
+.chat::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #0ee;
+}
+
+@media screen and (max-width: 960px) {
+  .chat {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .chat {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  .chat {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 497px) {
+  .chat {
+    width: 70vw;
+  }
+}
+
+@media screen and (max-width: 349px) {
+  .chat {
+    width: 65vw;
+  }
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.msg {
+  width: 80%;
+  outline-width: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  background-color: #003;
+  color: #0ff;
+}
+
+.msg::placeholder {
+  padding: 5px;
+  background-color: #003;
+  color: #0ee;
+}
+
+.new-msg {
+  list-style-type: none;
+  font-size: 1.9rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.btn {
+  width: 20%;
+  padding: 5px;
+  border: #0ee 2px groove;
+  cursor: pointer;
+  font-family: monospace;
+  background: #003;
+  color: #0ee;
+}

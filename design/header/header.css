@@ -1,12 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-.body {
-  margin: 0;
-  background: #001;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
