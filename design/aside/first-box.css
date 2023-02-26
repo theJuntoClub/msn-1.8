@@ -1,0 +1,62 @@
+.aside {
+  position: relative;
+  /* controlando el eje 3D de nuestra app */
+  z-index: 10;
+  /* ************************ */
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  top: 0;
+  left: 0;
+  background: #003;
+  color: #0ee;
+}
+
+.first-box {
+  position: relative;
+  float: left;
+  width: 63.5%;
+  background-image: url("/assets/background-box-1/1.jpg");
+  background-size: cover;
+}
+
+.first-box__h2 {
+  padding: 6px;
+  display: block;
+  width: 25%;
+  text-align: center;
+  margin-left: 200px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.7rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.first-box__carousel {
+  position: relative;
+  left: 114px;
+  top: -13px;
+  width: 607px;
+  height: 407px;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px #001;
+}
+
+img {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+  cursor: grab;
+  opacity: 0;
+}
+
+img.visible {
+  opacity: 1;
+}
+
+@media screen and (max-width: 869px) {
+  .first-box {
+    display: none;
+  }
+}

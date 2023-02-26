@@ -1,7 +1,7 @@
 .chat__bg {
   position: absolute;
   /* controlando el eje 3D de nuestra app */
-  z-index: 2;
+  z-index: 20;
   /* ************************ */
   width: 50%;
   height: 100vh;
