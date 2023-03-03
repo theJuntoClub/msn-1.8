@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>msn-1.8</title>
+    <!-- some styles -->
+    <link rel="stylesheet" href="/design/master.css" />
+    <link rel="stylesheet" href="/design/header/header.css" />
+    <link rel="stylesheet" href="/design/main/main.css" />
+    <link rel="stylesheet" href="/design/aside/first-box.css" />
+    <link rel="stylesheet" href="/design/aside/second-box.css" />
+    <!-- REMEMBER the defer Attribute -->
+    <script src=/app/burger.js" defer></script>
+    <script src="/app/chat.js" defer></script>
+    <script src="/app/carousel.js" defer></script>
+    <script src="/app/search-section.js" defer></script>
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__h1 header__h1-flexible">
+        <i>myFirstChatApp</i>
+      </h1>
+      <section class="header__box">
+        <article class="header__burger" id="burger-chat">
+          <div class="header__burger-lineUp"></div>
+          <div class="header__burger-lineSpecial"></div>
+          <div class="header__burger-lineDown"></div>
+        </article>
+      </section>
+    </header>
+    <main class="chat__bg" id="chat">
+      <div class="chat">
+        <ul class="chat__cloud" id="cloud"></ul>
+        <div class="chat__footer">
+          <input
+            type="text"
+            class="msg"
+            placeholder="Message"
+            type="text"
+            id="msg"
+          />
+          <button id="btn" class="btn">send</button>
+        </div>
+      </div>
+    </main>
+    <aside class="aside">
+      <div class="first-box">
+        <h2 class="first-box__h2">STORIES</h2>
+        <section class="first-box__carousel" id="carousel">
+          <img src="./assets/stories/1.jpg" alt="" />
+          <img src="./assets/stories/2.jpg" alt="" />
+          <img src="./assets/stories/3.jpg" alt="" />
+          <img src="./assets/stories/4.jpg" alt="" />
+          <img src="./assets/stories/5.jpg" alt="" />
+          <img src="./assets/stories/6.jpg" alt="" />
+          <img src="./assets/stories/7.jpg" alt="" />
+          <img src="./assets/stories/8.jpg" alt="" />
+          <img src="./assets/stories/9.jpg" alt="" />
+          <img src="./assets/stories/10.jpg" alt="" />
+          <img src="./assets/stories/11.jpg" alt="" />
+          <img src="./assets/stories/12.jpg" alt="" />
+          <img src="./assets/stories/13.jpg" alt="" />
+          <img src="./assets/stories/14.jpg" alt="" />
+          <img src="./assets/stories/15.jpg" alt="" />
+          <img src="./assets/stories/16.jpg" alt="" />
+          <img src="./assets/stories/17.jpg" alt="" />
+          <img src="./assets/stories/18.jpg" alt="" />
+          <img src="./assets/stories/19.jpg" alt="" />
+          <img src="./assets/stories/20.jpg" alt="" />
+          <img src="./assets/stories/21.jpg" alt="" />
+        </section>
+      </div>
+      <div class="second-box">
+        <section class="second-box__search-bar">
+          <label for="search" class="second-box__search-label">FRIENDS</label>
+          <input
+            type="text"
+            name="search"
+            placeholder="Looking up a friend !"
+            id="search"
+            class="second-box__search-input"
+            data-input
+          />
+        </section>
+        <section class="second-box__users" data-card>
+          <template data-clone>
+            <div class="second-box__users-card">
+              <div class="second-box__users-nick" data-nick></div>
+              <div class="second-box__users-url" data-url></div>
+              <div class="second-box__users-avatar"></div>
+            </div>
+          </template>
+        </section>
+      </div>
+    </aside>
+    <!--<footer></footer> -->
+  </body>
+</html>
