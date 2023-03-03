@@ -1,14 +1,3 @@
-/*
-
-.form {
-  width: 80%;
-  height: 100vh;
-  text-align: center;
-  display: grid;
-  grid-template-rows: ;
-  box-shadow: 2px 2px #0cc;
-}
- */
 * {
   box-sizing: border-box;
 }
@@ -17,6 +6,11 @@
   margin: 0;
   font-family: monospace;
   overflow: hidden;
+  /*con estas tres líneas nuestro footer estará siempre abajo*/
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  /* ************ */
   background: #001;
   color: #0cc;
 }
@@ -43,7 +37,7 @@
   max-width: 400px;
   padding: 20px;
   border-radius: 5px;
-  box-shadow: 6px 6px 8px #0cc;
+  box-shadow: 2px 2px 8px #0cc;
 }
 
 .form label {
@@ -67,6 +61,7 @@
 }
 
 .form input::placeholder {
+  opacity: 0.4;
   background-color: #003;
   color: #0ff;
 }

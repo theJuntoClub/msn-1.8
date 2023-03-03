@@ -11,7 +11,7 @@
   transform: translateX(-2000px);
   transition: 1.2s;
   /* **************** */
-  background-image: url("/assets/background-chat/wallpaper.webp");
+  background-image: url("/ready/assets/background-chat/wallpaper.webp");
   background-size: cover;
   background-color: #9cc;
 }
