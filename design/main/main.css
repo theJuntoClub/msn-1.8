@@ -89,6 +89,10 @@
   }
 }
 
+.chat__cloud {
+  margin-left: -30px;
+}
+
 .chat__footer {
   display: flex;
   justify-content: space-between;
@@ -113,9 +117,20 @@
 }
 
 .new-msg {
+  width: fit-content;
   list-style-type: none;
-  font-size: 1.9rem;
-  text-shadow: 1px 1px 3px #000;
+  padding: 6px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  background-color: #003;
+  color: #0ee;
+}
+
+@media screen and (max-width: 600px) {
+  .new-msg {
+    font-size: 1.2rem;
+  }
 }
 
 .btn {

@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./design/header/header.css" />
     <link rel="stylesheet" href="./design/main/main.css" />
     <link rel="stylesheet" href="./design/aside/first-box.css" />
+    <link rel="stylesheet" href="./design/aside/second-box.css" />
     <!-- REMEMBER the defer Attribute -->
     <script src="./app/burger.js" defer></script>
     <script src="./app/chat.js" defer></script>
     <script src="./app/carousel.js" defer></script>
+    <script src="./app/search-section.js" defer></script>
   </head>
   <body class="body">
     <header class="header">
@@ -70,8 +72,28 @@
           <img src="./assets/stories/21.jpg" alt="" />
         </section>
       </div>
-
-      <!--       <div class="second-box"></div> -->
+      <div class="second-box">
+        <section class="second-box__search-bar">
+          <label for="search" class="second-box__search-label">FRIENDS</label>
+          <input
+            type="text"
+            name="search"
+            placeholder="Looking up a friend !"
+            id="search"
+            class="second-box__search-input"
+            data-input
+          />
+        </section>
+        <section class="second-box__users" data-card>
+          <template data-clone>
+            <div class="second-box__users-card" >
+              <div class="second-box__users-nick" data-nick></div>
+              <div class="second-box__users-url" data-url></div>
+              <div class="second-box__users-avatar"></div>
+            </div>
+          </template>
+        </section>
+      </div>
     </aside>
     <!--<footer></footer> -->
   </body>

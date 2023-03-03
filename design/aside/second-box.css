@@ -1,0 +1,145 @@
+.second-box {
+  position: relative;
+  float: right;
+  width: 37.5%;
+  font-family: monospace;
+  background-image: url("/assets/background-box-2/2.jpg");
+  background-size: cover;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  color: #001;
+}
+
+.second-box::-webkit-scrollbar {
+  width: 15px;
+}
+
+.second-box::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #0ee;
+}
+
+@media screen and (max-width: 870px) {
+  .second-box {
+    width: 100%;
+  }
+}
+
+.second-box__search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.second-box__search-label {
+  display: block;
+  padding: 2px;
+  width: 13%;
+  border-radius: 6px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: #fff;
+  color: #003;
+}
+
+.second-box__search-input {
+  width: 70%;
+  margin-left: 5px;
+  padding: 6px;
+  outline-width: 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: monospace;
+  background-color: #001;
+  color: #0ff;
+}
+
+.second-box__search-input::placeholder {
+  font-family: monospace;
+  background-color: #001;
+  color: #0ff;
+}
+
+@media screen and (max-width: 1000px) {
+  .second-box__search-input {
+    width: 90%;
+  }
+}
+
+.second-box__users {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1px;
+  margin: 7px;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-box__users {
+    grid-template-columns: 1fr;
+  }
+}
+
+.second-box__users-card {
+  position: relative;
+  padding: 10px;
+  border: 3px groove #0ee;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.second-box__users-avatar {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-size: cover;
+  background-image: url("/assets/avatar.jpg");
+}
+
+.second-box__users-avatar:hover {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.second-box__users-nick {
+  color: #0ee;
+}
+
+.second-box__users-nick:hover {
+  padding: 5px;
+  display: block;
+  width: 80%;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border-radius: 15px;
+  background: #001;
+}
+
+.second-box__users-url {
+  font-size: 10px;
+  margin-top: 40px;
+  color: #0ee;
+}
+
+.second-box__users-url:hover {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #0ee;
+  background: #001;
+}
+
+@media screen and (min-width: 600px) {
+  .second-box__users-url {
+    font-size: 8px;
+  }
+}
+
+.ocultar {
+  display: none;
+}
