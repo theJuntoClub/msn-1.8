@@ -5,17 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>msn-1.8</title>
+    <link rel="stylesheet" href="design/login/login.css" />
     <script src="/app/login.js" defer></script>
   </head>
-  <body>
-    <form id="login-form">
-      <label for="email">e-mail</label>
-      <input type="email" id="email" name="email" />
-      <br />
-      <label for="pass">pass</label>
-      <input type="password" id="pass" name="pass" />
-      <br />
-      <input type="submit" value="login" />
-    </form>
+  <body class="body">
+    <header class="header">
+      <h1 class="heading">msn 1.8</h1>
+    </header>
+    <main>
+      <form id="login-form" class="form">
+        <div>
+          <label for="email">e-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div>
+          <label for="pass">pass</label>
+          <input type="password" id="pass" name="pass" />
+        </div>
+        <div class="form__submit-box">
+          <input type="submit" value="Login" />
+        </div>
+      </form>
+    </main>
   </body>
 </html>

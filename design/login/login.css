@@ -1,0 +1,96 @@
+/*
+
+.form {
+  width: 80%;
+  height: 100vh;
+  text-align: center;
+  display: grid;
+  grid-template-rows: ;
+  box-shadow: 2px 2px #0cc;
+}
+ */
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: monospace;
+  overflow: hidden;
+  background: #001;
+  color: #0cc;
+}
+
+.header {
+  margin-top: 30px;
+  /* text align centre SIEMPRE el contenido NO el contenedor 🔥 */
+  text-align: center;
+}
+
+.heading {
+  padding: 13px;
+  display: inline;
+  border-radius: 5px;
+  font-size: 2rem;
+  box-shadow: 2px 2px 6px #0cc;
+}
+
+.form {
+  /*margin-right: auto;
+  margin-left: auto;
+  margin-top: 100px; */
+  margin: 60px auto;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 6px 6px 8px #0cc;
+}
+
+.form label {
+  margin-bottom: 5px;
+  display: block;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 20px;
+  outline-width: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #0cc;
+  font-family: monospace;
+  background-color: #003;
+  color: #0ff;
+}
+
+.form input::placeholder {
+  background-color: #003;
+  color: #0ff;
+}
+
+.form input[type="submit"] {
+  width: fit-content;
+  outline-width: 0;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  font-family: monospace;
+  cursor: pointer;
+  background-color: #003;
+  color: #0ff;
+}
+.form input[type="submit"]:hover {
+  opacity: 0.7;
+  border-radius: 50%;
+
+  font-size: 1.6rem;
+  background-color: #0ff;
+  color: #003;
+}
+/* text align centre SIEMPRE el contenido NO el contenedor 🔥 */
+.form__submit-box {
+  text-align: center;
+}
