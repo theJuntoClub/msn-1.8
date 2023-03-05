@@ -9,8 +9,10 @@ form.addEventListener("submit", (e) => {
   if (email === "thjuntoclub@gmail.com" && pass === "1234") {
     // si coinciden, ingresamos a nuestra app final
     window.location.href = "./pages/master.html";
-    alert("si! ya sos parte de la comunidad!! 👍");
+    /*  alert("si! ya sos parte de la comunidad!! 👍"); */
+    Swal.fire("si! ya sos parte de la comunidad!! 👍");
   } else {
-    alert("ups, tus datos no coinciden 👎");
+    /* alert("ups, tus datos no coinciden 👎"); */
+    Swal.fire("ups, tus datos no coinciden 👎");
   }
 });
