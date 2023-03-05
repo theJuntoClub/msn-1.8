@@ -21,9 +21,9 @@
 }
 
 .first-box__h2 {
-  padding: 6px;
+  padding: 8px;
   display: block;
-  width: 25%;
+  width: fit-content;
   text-align: center;
   margin-left: 200px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
